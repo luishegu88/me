@@ -70,25 +70,21 @@ padding:0;
 border-bottom: 1px solid #a4a5a6;
 }
 
-.datos{
-height:250px;
-padding:0;
-}
 
- .sidebar{
-     display: flex;
+ .sidebar{  
+     width:100%;
+     height: auto;       
     color:#a4a5a6;
     font-family: Helvetica,Arial; 
-    flex-direction: row;
 }
 
 
-.side{
-    margin:0;
-    width:50%;
-    height:20px;
+
+div.side{
+    float:left;
+    width:25%;
+    height:75px;
     padding:0;
-    flex-direction: column;
 
 }
 
@@ -101,9 +97,26 @@ padding:0;
 }
 
 
-@media screen and (max-width:600px){
-    .side{
-    width:100%;
+@media screen and (max-width:900px){
+    div.side{
+    width:31.3%;
+    
+   
   }
 }
 
+@media screen and (max-width:700px){
+    div.side{
+    width:50%;
+   
+    
+  }
+}
+
+@media screen and (max-width:500px){
+    div.side{
+    width:100%;
+    
+  
+  }
+}
